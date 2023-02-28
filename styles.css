@@ -1,0 +1,226 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end CSS Reset*/
+
+html {
+	box-sizing: border-box;
+    background-color: rgba(122, 191, 191, .5);
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+img {
+	max-width: 100%;
+}
+body {
+  background-color: white;
+  max-width: 414px;
+  margin: auto;
+  position: relative;
+}
+header {
+  min-width: 100%;
+  position: relative;
+  top: 150px;
+  justify-content: center;
+  text-align: center;
+}
+menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+menu li {
+  flex-basis: 15%;
+  margin: 0px 10px;
+}
+nav {
+  width: 414px;
+  height: 65px;
+  overflow: hidden;
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  top: 0px;
+  border: 2px solid red;
+}
+nav img {
+  width: 50px;
+  display: none;
+}
+nav h2 {
+  display: none;
+}
+label {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  user-select: none;
+}
+label span {
+  background-color: #ffffff;
+  display: block;
+  position: absolute;
+  width: 50px;
+  top: 0px; 
+  left: 0px;
+}
+.nav-toggle {
+  display: none;
+}
+.nav-toggle-label:checked ~ ul {
+  height: 400px;   
+}
+.nav-toggle-label:checked ~ label span {
+  height: 600px;
+  overflow: visible;
+}
+.logoicon {
+  background-color: #EB5428;
+  width: 200px;
+}
+.search {
+  width: 414px;
+  position: absolute;
+  top: 80px;
+  text-align: center;
+}
+.search h3 {
+  display: none;
+}
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 40px;
+}
+main {
+  width: 100%;
+  display: grid;
+  position: relative;
+  top: 165px;
+}
+h2 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+}
+h3 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 25px;
+}
+h1, h2, h3 {
+  text-align: center;
+}
+p, ol, ul, dd {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin: 10px;
+}
+#ingredients {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding: 10px 0px;
+}
+ol {
+  list-style-type: numbered;
+  list-style-position: inside;
+  height: 430px;
+}
+ol li {
+  margin-bottom: 16px;
+}
+a {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+  color: #EB5428;
+  text-decoration: none;
+}
+.signin a, .home a {
+  color: black;
+}
+dt {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px; 
+  font-weight: bold;
+  display: inline-block;
+  min-width: 100px;
+  margin-left: 10px;
+}
+dd {
+  display: inline;
+  margin-left: 20px;
+}
+dd:after {
+  display: block;
+  content: '';
+}
+.signin {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+footer {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+}
+aside {
+  background-color: #7ABFBF;
+}
+.checked {
+  fill: #EB5428;
+}
+.connect {
+  width: 414px;
+  text-align: center;
+}
+.connect h2, h3 {
+  display: none;
+}
+.connect li {
+  width: 80px;
+  display: inline-block;
+}
